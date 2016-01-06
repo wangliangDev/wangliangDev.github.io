@@ -65,8 +65,8 @@ nav:
 
 #Author config
 author:
-    name: minixalpha
-    email: xkzbeta@outlook.comment
+    name: wangliangDev
+    email: 36649351@qq.com
     imageLink: https://avatars.githubusercontent.com/minixalpha
     simpleIntro: 我是 wangliangDev
     detailIntro:
@@ -109,8 +109,8 @@ customLinks:
 
 #comment config
 disqus:
-  config: false
-  id: minixalpha
+  config: ture
+  id: wangliangDev
 
 
 #################################### global configure #######################################

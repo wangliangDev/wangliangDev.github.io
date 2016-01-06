@@ -110,8 +110,8 @@ googleAnaly:
 
 #comment config
 disqus:
-  config: false
-  id: piznblog
+  config: ture
+  id: wangliangDev
 
 duoshuo:
   config: true
