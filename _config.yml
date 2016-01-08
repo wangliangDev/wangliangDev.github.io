@@ -67,8 +67,8 @@ nav:
 author:
     name: wangliangDev
     email: 36649351@qq.com
-    imageLink: https://avatars.githubusercontent.com/minixalpha
-    simpleIntro: 我是 wangliangDev
+    imageLink: https://wangliangDev.github.io
+    simpleIntro:  wangliangDev
     detailIntro:
       
 
@@ -82,10 +82,7 @@ follow:
     url: http://renren.com
   - class: icon-github-alt
     url: http://github.com
-  - class: icon-twitter
-    url: http://twitter.com
-  - class: icon-google-plus
-    url: http://google.com
+ 
 
 #Links
 customLinks:
