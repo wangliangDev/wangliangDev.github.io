@@ -43,9 +43,9 @@ timezone:      null
 
 
 #Site config
-title: Jekyll Theme
-description: Just another Jekyll theme design and code by zhanxin.info.
-keywords: Jekyll Theme
+title: 1111
+description: xxx
+keywords: xxxx
 url: /wangliangDev
 feed: /atom.xml
 favicon: http://jekyllrb.com/favicon.png
@@ -60,8 +60,8 @@ nav:
     url: navigations/archives.html
   - text: 联系我
     url: navigations/contact.html
-  - text: 友情链接
-    url: navigations/links.html
+  # - text: 友情链接
+  #   url: navigations/links.html
 
 #Author config
 author:
@@ -73,15 +73,15 @@ author:
       
 
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
-follow:
-  - class: icon-rss
-    url: /atom.xml
-  - class: icon-weibo
-    url: http://weibo.com
-  - class: icon-renren
-    url: http://renren.com
-  - class: icon-github-alt
-    url: http://github.com
+# follow:
+#   - class: icon-rss
+#     url: /atom.xml
+#   - class: icon-weibo
+#     url: http://weibo.com
+#   - class: icon-renren
+#     url: http://renren.com
+#   - class: icon-github-alt
+#     url: http://github.com
  
 
 #Links
