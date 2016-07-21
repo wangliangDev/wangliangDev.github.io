@@ -1,7 +1,7 @@
 
 
 
-######################### theme kunka condigure ##############################################
+######################### theme kunka condigur ##############################################
 # Where things are
 source:       .
 destination:  ./_site
