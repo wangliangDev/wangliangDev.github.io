@@ -101,8 +101,8 @@ markdown: redcarpet
 safe: false
 highlighter: pygments
 title: 汪亮的技术博客
-description: 扶我起来,我还能写
-theme: minimal 
+description: 笨鸟先飞
+theme: slate
 disqusname: wangliangDev
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
