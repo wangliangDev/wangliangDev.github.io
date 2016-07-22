@@ -37,22 +37,22 @@ SDWebImage 概论
 ###SDWebImage 使用
 1.使用IImageView+WebCache category来加载UITableView中cell的图片
 
-`
-[cell.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.domain.com/path/to/image.jpg"] placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
-`
+ 
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.domain.com/path/to/image.jpg"] placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+
 
 2.使用Blocks,采用这个方案可以在网络图片加载过程中得知图片的下载进度和图片加载成功与否
 
-`
-[cell.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.domain.com/path/to/image.jpg"] placeholderImage:[UIImage imageNamed:@"placeholder.png"] completed:^(UIImage image, NSError error, SDImageCacheType cacheType, NSURL *imageURL) { ... completion code here ... }];
-`
+
+	[cell.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.domain.com/path/to/image.jpg"] placeholderImage:[UIImage imageNamed:@"placeholder.png"] completed:^(UIImage image, NSError error, SDImageCacheType cacheType, NSURL *imageURL) { ... completion code here ... }];
+
 
 
 3.使用SDWebImageManager,SDWebImageManager为UIImageView+WebCache category的实现提供接口。
 
-`
-SDWebImageManager manager = [SDWebImageManager sharedManager] ;[manager downloadImageWithURL:imageURL options:0 progress:^(NSInteger   receivedSize, NSInteger expectedSize) { // progression tracking code }   completed:^(UIImage image, NSError error, SDImageCacheType cacheType,   BOOL finished, NSURL imageURL) { if (image) { // do something with image } }];
-`
+
+	SDWebImageManager manager = [SDWebImageManager sharedManager] ;[manager downloadImageWithURL:imageURL options:0 progress:^(NSInteger   receivedSize, NSInteger expectedSize) { // progression tracking code }   completed:^(UIImage image, NSError error, SDImageCacheType cacheType,   BOOL finished, NSURL imageURL) { if (image) { // do something with image } }];
+
 
 4.加载图片还有使用SDWebImageDownloader和SDImageCache方式，但那个并不是我们经常用到的。基本上面所讲的3个方法都能满足需求。
 
