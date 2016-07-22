@@ -98,9 +98,7 @@ disqus:
 username: wangliangDev
 
 ####baseurl: /wangliangDev.github.io
-
 baseurl: /blog
-
 markdown: redcarpet
 safe: false
 highlighter: pygments
