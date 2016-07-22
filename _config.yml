@@ -102,7 +102,7 @@ safe: false
 highlighter: pygments
 title: 汪亮的技术博客
 description: 笨鸟先飞
-theme: kunka
+theme: slate
 disqusname: wangliangDev
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
