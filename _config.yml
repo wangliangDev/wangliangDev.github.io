@@ -96,8 +96,8 @@ disqus:
 #################################### global configure #######################################
 
 username: wangliangDev
-####baseurl: /wangliangDev.github.io
-baseurl: /blog
+baseurl: /wangliangDev.github.io
+
 markdown: redcarpet
 safe: false
 highlighter: pygments
