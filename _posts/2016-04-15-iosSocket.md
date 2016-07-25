@@ -59,7 +59,7 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
 - NSOutputStream：NSSTream的子类，用于写输出。
 
 #####服务端先不提，客户端代码大概如下
-
+```objective-c
 	-(void)test
 	{
 
@@ -94,6 +94,8 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
      }
     NSLog(@"连接成功");
 	}
+```
+
 
 大概就是这样，因为是C语言的，所以看起来不是很方便，一般开发中都会使用比较简单的方法，如下。
 
@@ -101,9 +103,9 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
 
 iOS的socket实现是特别简单的，可以使用用github的开源类库cocoaasyncsocket简化开发，cocoaasyncsocket是支持tcp和ump的。代码大概如下：
 
-
+```objective-c
 - (IBAction)connectToServer:(id)sender {
-- 
+ 
     // 1.与服务器通过三次握手建立连接
     
     NSString *host = @"133.33.33.1";
@@ -124,6 +126,9 @@ iOS的socket实现是特别简单的，可以使用用github的开源类库cocoa
         NSLog(@"%s",__func__);
     }
     
+```  
+  
+``` objective-c 
     pragma mark 断开连接
     
     -(void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err{
@@ -133,6 +138,10 @@ iOS的socket实现是特别简单的，可以使用用github的开源类库cocoa
         NSLog(@"正常断开");
     }
 	}
+```	
+	
+	
+```objective-c 
   pragma mark 数据发送成功
   
 	-(void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag{
@@ -140,13 +149,17 @@ iOS的socket实现是特别简单的，可以使用用github的开源类库cocoa
 	//发送完数据手动读取，-1不设置超时
 	[sock readDataWithTimeout:-1 tag:tag];
 	}
-	
+```	
+
+```objective-c 
   pragma mark 读取数据
   
 	-(void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
-	NSString *receiverStr = [[NSString alloc] initWithData:data 	encoding:NSUTF8StringEncoding];
+	NSString *receiverStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 	NSLog(@"%s %@",__func__,receiverStr);
 	}
+	
+```
 
 
 
