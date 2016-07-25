@@ -59,7 +59,7 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
 - NSOutputStream：NSSTream的子类，用于写输出。
 
 #####服务端先不提，客户端代码大概如下
-```objective-c
+```java
 	-(void)test
 	{
 
@@ -103,7 +103,7 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
 
 iOS的socket实现是特别简单的，可以使用用github的开源类库cocoaasyncsocket简化开发，cocoaasyncsocket是支持tcp和ump的。代码大概如下：
 
-```objective-c
+```java
 - (IBAction)connectToServer:(id)sender {
  
     // 1.与服务器通过三次握手建立连接
