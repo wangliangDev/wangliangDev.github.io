@@ -1,9 +1,9 @@
 <ul class="post-list">
     {% for post in site.posts %}
     
-        <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
+        <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>  &nbsp&nbsp&nbsp
         
-        {{ post.date | date: "%F" }}
+        {{ post.date | date: "%F" }}<br><br>
         
         
     {% endfor %}

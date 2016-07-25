@@ -1,15 +1,9 @@
-<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/solarized_dark.min.css">
-<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
 ---
 layout: post
 title: 关于iOS socket都在这里了
 category: 技术
 comments: true
-
 ---
-
 
 ####本文授权转载，作者：吴白（简书）
 
@@ -184,7 +178,6 @@ TCP是一种流模式的协议，UDP是一种数据报模式的协议。
 WEB使用HTTP作传输层协议，以封装HTTP文本信息，然后使用TCP/IP做传输层协议将它发送到网络上。Socket是对TCP/IP协议的封装，Socket本身并不是协议，而是一个调用接口（API），通过Socket，我们才能使用TCP/IP协议。
 
 ![](http://cc.cocimg.com/api/uploads/20160601/1464767037800627.jpg)
-
 
 
 #####TCP连接
