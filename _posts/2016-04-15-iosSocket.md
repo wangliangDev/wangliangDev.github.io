@@ -150,6 +150,8 @@ iOS的socket实现是特别简单的，可以使用用github的开源类库cocoa
 	NSLog(@"%s %@",__func__,receiverStr);
 	}
 
+
+
 下面是原理补充，有兴趣的朋友可以细看。
 
 #####网络七层协议
