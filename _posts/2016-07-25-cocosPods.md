@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 关于IOS端安全的问题
+title: 2016安装cocoaPods
 category: 技术
 comments: true
 ---
@@ -69,6 +69,7 @@ end
 
 
 `pod install --no-repo-updateorpod install`
+
 第一个命令是不更新本地库信息进行安装，速度会快一点，毕竟不需要更新。但是会有一点点问题，当有一个新的库发布的时候，就会无法安装成功。如果不嫌麻烦，可以定时执行以下命令更新CocoaPods的库，然后就可以在一段时间使用以上的第一个命令进行安装:
 
 `pod repo update`
