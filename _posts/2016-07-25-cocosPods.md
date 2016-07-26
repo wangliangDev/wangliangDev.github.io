@@ -1,8 +1,15 @@
 ---
+title: "2016安装cocoaPods"
 layout: post
-title: 2016安装cocoaPods
-category: 技术
-comments: true
+date: 2016-07-25
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+
+blog: true
+
+author: ""
+description: ""
 ---
 
 作者：skytoup（Github）
