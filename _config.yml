@@ -126,7 +126,7 @@ theme: slate
 ###disqusname: wangliangDev
 disqus:
   config: true
-  id: wangliangDev
+  id: disqus_3fldC3Flny
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
 # those themes are all come from GitHub Pages Themes
