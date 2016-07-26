@@ -1,137 +1,120 @@
-# Jekyll-Mono
+StrayBirds
+==========
 
-**Jekyll-Mono** is a simple and elegant GitHub Profile cum Blog theme based on Barry Clark's [Jekyll-Now](https://github.com/barryclark/jekyll-now). It's a result of my attempt to learn **Jekyll** and create a minimalistic theme to put up my CV alongwith some blog posts.
+基于 GitHub Pages 搭建的极简博客，所有操作都可以直接通过浏览器完成。
 
-It is crafted with 💙 by [Akshay Agarwal](https://github.com/AkshayAgarwal007).
+## 示例
 
-![Jekyll-Mono Home Page](/images/ss.png)
+可以通过访问 [StrayBirds](http://minixalpha.github.io/StrayBirds/) 看到最终
+的效果，下面是截图:
+
+![ui-demo](/images/ui_demo.png)
+
+## 教程
+
+### 使用方法
+
+1. 注册 GitHub，得到用户名，例如 minixbeta
+2. 到 [StrayBirds](https://github.com/minixalpha/StrayBirds) 页面，单击右上
+角的 Fork
+3. 到你 Fork 后的项目中，将 `_config.yml` 中的 username 修改为你的用户名 minixbeta
+4. 访问你的博客 http://minixbeta.github.io/StrayBirds/
+
+![create_project](/images/create_project.gif)
+
+**注意如果你是第一次使用 GitHub Pages，可能不会马上生效，等一段时间即可**
+
+**按照配置中说的方法修改项目名称可能会加快这一进程**
+
+### 配置
+
+* 修改主题
+
+在 `_confg.yml` 下修改 theme 的值。
+
+**注意修改主题后，并不会马上生效，GitHub 还要反应一段时间，所以请耐心等待**
+
+**修改主题后, 按照配置中说的方法修改项目名称可能会加快这一进程**
+
+可选主题包括：
+
+- hack
+	![hack-demo](/images/hack-demo.png)
+- leap-day
+	![leap-day-demo](/images/leap-day-demo.png)
+- merlot
+	![merlot-demo](/images/merlot-demo.png)
+- midnight
+	![midnight-demo](/images/midnight-demo.png)
+- minimal
+	![minimal-demo](/images/minimal-demo.png)
+- modernist
+	![modernist-demo](/images/modernist-demo.png)
+- slate
+	![slate-demo](/images/slate-demo.png)
+- time-machine
+	![time-machine-demo](/images/time-machine-demo.png) 
+- kunka
+	![kunka-demo](/images/kunka-demo.png)
+
+* 修改项目名
+
+例如将 StrayBirds 修改为 blog，那么你需要做的是
+
+1. 在项目的 Setting 中将 Repository name 从 StrayBirds 修改为 blog
+2. 将 `_config.yml` 中的 baseurl 修改为 /blog
+3. 通过 http://minixbeta.github.io/blog/ 来访问你的新博客
+
+![create_post](/images/change_project_name.gif)
 
 
-## What is Jekyll?
+* 修改评论系统用户名
 
-It is a static site generator. It takes your content written in Markdown, passes it through your templates and spits it out as a complete static website, ready to be served using GitHub pages for free.
-Because your entire blog is static it serves and perform faster. It consumes less web resources namely memory and I/O.
+我们的评论系统使用的是 [Disqus](https://disqus.com/)，如果你想在这份博客模板中使用，需要先去注册一下，然后得到一个用户名，例如 minixalpha。然后在 `_config.yml` 中将 disqusname 修改为 minixalpha。
 
-## Getting Started
+**千万注意: 如果你开启评论系统一定要修改这个值，不然就评论到我的评论系统中去了**
 
-Let's quickly set up your new blog in a matter of minutes.
+### 添加文章
 
-### Fork this repository
+在 `_post` 目录下添加形如 `2014-10-26-title.md` 的文章，用 markdown 格式
+撰写博客。
 
-Hit the “Fork” button in the top-right corner of the repository to fork a copy of this theme to your GitHub account and rename it to **yourusername.github.io** and then visit https://yourusername.github.io and you'll be able to see your newly created blog using Jekyll-Mono.
-
-### Customise Jekyll-Mono
-
-So now your blog is live with its default settings. Let's customise it now.
-
-Edit the _config.yml and enter your site name and description. You can easily turn on Google Analytics tracking, Disqus commenting and cool loking social icons here too.
-
-Jekyll-Mono also comes with the option of setting up the color scheme of your blog. You can do this by editing _variables.scss that lies inside the _sass folder. You can change the main theme color by simply replacing the current hex color value of `$mono` with the one of your choice. A few main theme sample colors are included in there as comments. Apart from the main theme color you can also change the header link color, navbar hover color, hyperlink color as well as the color of the various headings.
-
-A look at the customisations you can do with _variable.scss
+例如：
 
 ```
-// Main theme colors 
-// Some cool main theme colors(violet:#8476ad;blue:#5cacee;red:#ff7373,#ff6f69;green:#6acf64,#2ddbb3;orange:#ffa268)
-
-$mono-color:#8476ad;                // main theme color(header, links, footer icons, buttons, post-title)
-$hl-color: $darkGray;              // header link color (author name and posted on date) for blog post meta 
-$navbar-hover-color:$gray;        // navbar hover color (site name and navbar links hover color)
-$link-color: $darkerGray;        // normal hyperlink color other than the ones above.
-
-
-// Heading colors
-// You can play around with these too!
-$h1-color: $mono-color;
-$h2-color: $mono-color; 
-$h3-color: $darkerGray; 
-$h4-color: $gray;
-``` 
-Have a look at Jekyll-Mono with four different main theme colors.
- 
-![Jekyll Mono in 4 different colors](/images/ss-color.png)
-
-Finally you need to set up your avatar. Pick up your avatar, resize it to 220x220px simply using paint or any editor of your choice and upload it to the images folder. Now open _variables.scss, you'll see something like this `$avatar: "/images/avatar.jpg";`. Here change the avatar.jpg to what you have uploaded just now.
-
-
-### Start Blogging
-
-Publish your first blog post by editing /_posts/2016-03-06-Eternal-Lorem-Ipsum.md. [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy while writing your blog posts in Markdown. If you are not comfortable with writing in Markdown you can use [Prose](http://prose.io/) for writing your blog posts. [This](https://developmentseed.org/blog/2012/june/25/prose-a-content-editor-for-github/s) will help you in setting up prose.
-
-![Post](/images/post.PNG)
-
-To create a post just click on create new file button in /_posts/. Create a new file with the following naming convention: **year-month-day-title.md**. Also make sure to include the front-matter at the top of each new blog post.
-
-You can see the front matter at the top of /_posts/2016-03-06-Eternal-Lorem-Ipsum.md. It looks something like this. You have to change the title and author according to your post. The layout will remain the same.
-
-```
---- 
+---
 layout: post
-title: The Eternal Lorem Ipsum Placeholder Text Here
-author: Author Name
+title: Java 中的并发
+comments: true
+category: 技术
 ---
 
+
+## 如何创建一个线程
+
+按 Java 语言规范中的说法，创建线程只有一种方式，就是创建一个 Thread 对象。而从 HotSpot 虚拟机的角度看，创建一个虚拟机线程
+有两种方式，一种是创建 Thread 对象，另一种是创建 一个本地线程，加入到虚拟机线程中。
+
+...
+
 ```
 
-### About and Projects Page
+其中 `layout` 表示布局，不用改变，`title` 表示文章题目，`comments` 表示是否要开户评论。
 
-In the parent folder you'll find about.md and projects.md. These are templates for helping you to set up your biodata/CV and projects that will be available at yourusername.github.io/about and yourusername.github.io/projects respectively. Again you can edit it in Markdown on GitHub or using Prose as per your choice.
+![create_post](/images/create_post.gif)
 
+## 感谢
 
-## Demo
+Thanks to authors of the themes:
 
-You can see the live demo of this theme at http://akshayagarwal007.github.io/Jekyll-Mono/
+* [hack](https://github.com/sundaykofax/baby-legs), Licence: None
+* [leap-day](https://github.com/mattgraham/leapday), Licence: [Creative Commons Attribution](http://creativecommons.org/licenses/by/3.0/)
+* [merlot](https://github.com/cameronmcefee/headsmart/tree/gh-pages), Licence: None
+* [midnight](https://github.com/briandoll/change-inside-surroundings.vim/tree/gh-pages), Licence: None
+* [minimal](https://github.com/orderedlist/minimal), Licence: [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/)
+* [modernist](https://github.com/orderedlist/modernist), Licence: [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/)
+* [slate](https://github.com/jasoncostello/slate), Licence: MIT
+* [time-machine](https://github.com/jonrohan/time-machine-theme), Licence: None
+* [kunka](https://github.com/pizn/kunka), Licence: MIT, author: [zhanxin.info](http://www.zhanxin.info/)
 
-## Local Development
-
-For setting up your development environment you can follow the official Jekyll [Documentation](https://jekyllrb.com/docs/installation/). It's a little bit complicated for Windows users. Let's see how it's done on windows:
-
-1. **Install Chocolatey**. **[Chocolatey](https://chocolatey.org)** is a package manager for windows. It's awesome. 
-   Open a command propmt with administrator access. Paste this. Hit Enter and restart the command prompt.
-   
-   ```
-   @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
-   
-   ```
-
-2. **Install Ruby** : In your command prompt type `choco install ruby -y`.
- Hit Enter. After installation restart the cmd with administrator privileges.
-
-3. **Install Jekyll/Sass (plug-ins used by GitHub Pages)**: `gem install github-pages`
-
-4. **Clone your fork of Jekyll-Mono** `git clone https://github.com/yourusername/yourusername.github.io.git`
-
-5. **Serve the site** by `jekyll serve`. It regenerates itself after any changes has been made.
-
-6. **View your site** at http://127.0.0.1:4000/
-
-7. If you make any changes to _config.yml you'll need to rebuild the site using `jekyll build` and then again a `jekyll serve` to serve it. You'll need to do a rebuild only if you want to see the changes locally, else you can simply commit your changes and push them to your GitHub repo, GitHub pages will rebuild and serve your website.
-
-## Credits
-
-* [Barry Clark](https://github.com/barryclark) for creating [Jekyll-Now](https://github.com/barryclark/jekyll-now) on which this theme is based.
-* [Manoela Ilic](https://github.com/crnacura) of Codrops for writing awesome articles on web design.
-* [David Miller](https://github.com/davidtmiller) of Blackrock Digital for making awesome open source themes.
-* [Jekyll](https://github.com/jekyll/jekyll) - Thanks to its creator and contributors.
-* [Font-Awesome](http://fontawesome.io) - Thanks to its creator and contributors.
-
-## Contributing
-
-* Found a bug? Report it on GitHub [Issues](https://github.com/AkshayAgarwal007/Jekyll-Mono/issues) and include a code sample.
-* [Fork](https://github.com/AkshayAgarwal007/Jekyll-Mono/fork) the repository and start your own blog using it and let me know about it so that I can include a reference to it here. Probably the best way you can contribute :)
-* If you find anything that's wrong or want to talk to me about anything related to this theme or want to contribute in any way, please feel free to [mail me](mailto:agarwal.akshay.akshay8@gmail.com).
-
-## License
-
-Jekyll-Mono is licensed under [MIT](https://github.com/AkshayAgarwal007/Jekyll-Mono/blob/master/LICENSE.txt).
-
-
-
-
-
-
-
-
-
-
-  
+All the themes are intergrated in the blog template, with some modifies.
