@@ -15,13 +15,13 @@ description: ""
 作者：skytoup（Github）
 
 
-#####CocoaPods简介aa
+##### CocoaPods简介aa
 
 CocoaPods是一个管理Swift和Objective-C的Cocoa项目的依赖工具。它现在有超过一万八千多个库，可以优雅地帮助你扩展你的项目。简单的说，就是替你管理Swift和Objective-C的Cocoa项目的第三方库引入。
 
 官网地址: [https://cocoapods.org/](https://cocoapods.org/)
 
-#####安装
+##### 安装
 
 Mac上面本来就自带了ruby，所有就不用自己安装了(除非你卸载了)。
 打开Terminal(终端)，输入以下命令(第二个命令可能会需要稍等一会儿)

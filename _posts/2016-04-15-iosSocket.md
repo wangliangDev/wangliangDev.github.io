@@ -1,11 +1,18 @@
 ---
+title: "关于iOS socket都在这里了"
 layout: post
-title: 关于iOS socket都在这里了
-category: 技术
-comments: true
+
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+
+blog: true
+
+author: ""
+description: ""
 ---
 
-####本文授权转载，作者：吴白（简书）
+#### 本文授权转载，作者：吴白（简书）
 
 socket（套接字）是通信的基石，是支持TCP/IP协议的网络通信的基本操作单元，包含进行网络通信必须的五种信息：连接使用的协议，本地主机的IP地址，本地进程的协议端口，远地主机的IP地址，远地进程的协议端口。
 
@@ -20,7 +27,7 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
 
 
 
-#####socket使用的库函数
+##### socket使用的库函数
 
 
 1.创建套接字
@@ -58,7 +65,23 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
 - NSInputStream：NSStream的子类，用于读取输入
 - NSOutputStream：NSSTream的子类，用于写输出。
 
-#####服务端先不提，客户端代码大概如下
+##### 服务端先不提，客户端代码大概如下
+
+{% highlight html %}
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="{{ site.url }}/{{ site.picture }}" alt="Alt Text">
+        <figcaption class="caption">Photo by John Doe</figcaption>
+    </div>
+
+    <div class="toright">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+{% endhighlight %}
+
+
+
 ```java
 	-(void)test
 	{
@@ -99,7 +122,7 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
 
 大概就是这样，因为是C语言的，所以看起来不是很方便，一般开发中都会使用比较简单的方法，如下。
 
-#####CocoaAsyncSocket
+##### CocoaAsyncSocket
 
 iOS的socket实现是特别简单的，可以使用用github的开源类库cocoaasyncsocket简化开发，cocoaasyncsocket是支持tcp和ump的。代码大概如下：
 
@@ -165,7 +188,7 @@ iOS的socket实现是特别简单的，可以使用用github的开源类库cocoa
 
 下面是原理补充，有兴趣的朋友可以细看。
 
-#####网络七层协议
+##### 网络七层协议
 
 网络七层协议由下往上分别为物理层、数据链路层、网络层、传输层、会话层、表示层和应用层。其中物理层、数据链路层和网络层通常被称作媒体层，是网络工程师所研究的对象；传输层、会话层、表示层和应用层则被称作主机层，是用户所面向和关心的内容。
 
@@ -173,7 +196,7 @@ HTTP协议对应于应用层，TCP协议对应于传输层，IP协议对应于�
 
 ![](http://cc.cocimg.com/api/uploads/20160601/1464766935249090.jpg)
 
-#####TCP/IP五层模型
+##### TCP/IP五层模型
 
 TCP/IP五层模型的协议分为：应用层、传输层、网络层、数据链路层和物理层。中继器、集线器、还有我们通常说的双绞线也工作在物理层；网桥（现已很少使用）、以太网交换机（二层交换机）、网卡（其实网卡是一半工作在物理层、一半工作在数据链路层）在数据链路层；路由器、三层交换机在网络层；传输层主要是四层交换机、也有工作在四层的路由器。
 
@@ -193,7 +216,7 @@ WEB使用HTTP作传输层协议，以封装HTTP文本信息，然后使用TCP/IP
 ![](http://cc.cocimg.com/api/uploads/20160601/1464767037800627.jpg)
 
 
-#####TCP连接
+##### TCP连接
 
 要想明白Socket连接，先要明白TCP连接。手机能够使用联网功能是因为手机底层实现了TCP/IP协议，可以使手机终端通过无线网络建立TCP连接。TCP协议可以对上层网络提供接口，使上层网络数据的传输建立在“无差别”的网络之上。
 
@@ -229,7 +252,7 @@ https协议需要到ca申请证书；http是超文本传输协议，信息是明
 
 ![](http://cc.cocimg.com/api/uploads/20160601/1464767167242387.jpeg)
 
-#####Socket连接与HTTP连接的不同
+##### Socket连接与HTTP连接的不同
 
 通常情况下Socket连接就是TCP连接，因此Socket连接一旦建立，通信双方即可开始相互发送数据内容，直到双方连接断开。但在实际应用中，客户端到服务器之间的通信防火墙默认会关闭长时间处于非活跃状态的连接而导致 Socket 连接断连，因此需要通过轮询告诉网络，该连接处于活跃状态。
 
