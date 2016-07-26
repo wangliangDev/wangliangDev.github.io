@@ -69,23 +69,9 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
 
 #### 服务端先不提，客户端代码大概如下
 
-{% highlight html %}
-<div class="side-by-side">
-    <div class="toleft">
-        <img class="image" src="{{ site.url }}/{{ site.picture }}" alt="Alt Text">
-        <figcaption class="caption">Photo by John Doe</figcaption>
-    </div>
-
-    <div class="toright">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-</div>
-{% endhighlight %}
 
 
-
-
-{% highlight java %}
+```java
  -(void)test
 	{
     NSString * host =@"123.33.33.1";
@@ -118,8 +104,7 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
      }
     NSLog(@"连接成功");
     }
-{% endhighlight %}
-
+```
 
 大概就是这样，因为是C语言的，所以看起来不是很方便，一般开发中都会使用比较简单的方法，如下。
 
@@ -152,7 +137,7 @@ iOS的socket实现是特别简单的，可以使用用github的开源类库cocoa
     
 ```  
   
-``` objective-c 
+``` java 
     pragma mark 断开连接
     
     -(void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err{
@@ -165,7 +150,7 @@ iOS的socket实现是特别简单的，可以使用用github的开源类库cocoa
 ```	
 	
 	
-```objective-c 
+```java 
   pragma mark 数据发送成功
   
 	-(void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag{
@@ -175,7 +160,7 @@ iOS的socket实现是特别简单的，可以使用用github的开源类库cocoa
 	}
 ```	
 
-```objective-c 
+```java
   pragma mark 读取数据
   
 	-(void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
