@@ -84,14 +84,13 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
 
 
 
-{% highlight html %}
--(void)test
-	{
 
+{% highlight js %}
+ -(void)test
+	{
     NSString * host =@"123.33.33.1";
     NSNumber * port = @1233;
     // 创建 socket
-    
     int socketFileDescriptor = socket(AF_INET, SOCK_STREAM, 0);
     if (-1 == socketFileDescriptor) {
         NSLog(@"创建失败");
@@ -118,7 +117,7 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
         return;
      }
     NSLog(@"连接成功");
- }
+    }
 {% endhighlight %}
 
 
