@@ -32,6 +32,8 @@ You can pick as item to see how to apply in markdown.
 
 ---
 
+
+
 ## Evidence
 
 You can try the evidence!
@@ -43,6 +45,9 @@ You can try the evidence!
 {% endhighlight %}
 
 ---
+
+
+
 
 ## Side-by-side
 
@@ -102,6 +107,8 @@ Like the [Medium](https://medium.com/) component.
 
 ---
 
+
+
 ## Star
 
 You can give evidence to a post. Just add the tag to the markdown file.
@@ -111,6 +118,7 @@ star: true
 {% endhighlight %}
 
 ---
+
 
 ## Especial Breaker
 
