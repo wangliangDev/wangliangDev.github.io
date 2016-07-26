@@ -79,7 +79,7 @@ read-time: true
 show-tags: true
 
 # related posts inside a post?
-related: true
+related: false
 
 # show next & prev links in blog post?
 blog-nav-links: false
