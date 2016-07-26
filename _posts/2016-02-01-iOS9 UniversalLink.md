@@ -1,16 +1,25 @@
 ---
+title: "iOS9 UniversalLink使用"
 layout: post
-title: iOS9 UniversalLink使用
-category: 技术
-comments: true
+
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+
+blog: true
+
+author: ""
+description: ""
+
 ---
 
-##简介
+## 简介
+
 通用链接是Apple在WWDC2015上为iOS9引入的一个新功能，是通过传统HTTP链接来启动App的技术。可以使用相同的网址打开网站和App。
 
 通过唯一的网址，就可以链接到App中具体的视图，不需要特殊的schema。如果用户没有安装App则链接到对应的普通网页。
 
-*先决条件
+* 先决条件
 l至少Xcode7
 
 l至少iOS9beta2（之前的测试版本要做额外的工作）
@@ -53,7 +62,6 @@ blob.png
 
 appID对应项由前缀和ID两部分组成，可以在developer.apple.com中的Identifiers→AppIDs中点击对应的App ID查看。
 
-blob.png
 
 paths对应域名中的path，用于过滤可以跳转到App的链接，支持通配符‘*’，‘？’以及‘NOT’进行匹配，匹配的优先级是从左至右依次降低。
 
@@ -68,7 +76,7 @@ cat apple-app-site-association-unsigned | openssl smime -sign -inkey yourdomain.
 3.4响应处理
 点击链接跳入App，由UIApplicationDelegate中的application:continueUserActivity:restorationHandler:函数进行处理，通过如下方式获取URL，然后对不同的URL进行不同的响应。
 
-blob.png
+
 
 4一些注意的事项
 1.apple-app-site-association不需要.json后缀。

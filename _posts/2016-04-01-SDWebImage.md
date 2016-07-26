@@ -1,12 +1,19 @@
 ---
 layout: post
 title: iOS图片加载框架－SDWebImage解读
-category: 技术
-comments: true
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+
+blog: true
+
+author: ""
+description: ""
+
 ---
 
 
-####本文转自简书 作者  junbinchen 
+#### 本文转自简书 作者  junbinchen 
 
 在iOS的图片加载框架中，SDWebImage可谓是占据大半壁江山。它支持从网络中下载且缓存图片，并设置图片到对应的UIImageView控件或者UIButton控件。在项目中使用SDWebImage来管理图片加载相关操作可以极大地提高开发效率，让我们更加专注于业务逻辑实现。
 
@@ -34,7 +41,7 @@ SDWebImage 概论
 
 <br/>
 <br/>
-###SDWebImage 使用
+### SDWebImage 使用
 1.使用IImageView+WebCache category来加载UITableView中cell的图片
 
  
@@ -59,7 +66,7 @@ SDWebImage 概论
 <br/>
 <br/>
 
-###SDWebImage 流程
+### SDWebImage 流程
 
 ![](http://upload-images.jianshu.io/upload_images/656644-7dfe370a86e157e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -67,7 +74,7 @@ SDWebImage 概论
 <br/>
 <br/>
 
-###SDWebImage 接口
+### SDWebImage 接口
 SDWebImage是一个成熟而且比较庞大的框架，但是在使用过程中并不需要太多的接口,这算是一种代码封装程度的体现。这里就介绍比较常用的几个接口。
 
 
@@ -96,7 +103,7 @@ SDWebImage是一个成熟而且比较庞大的框架，但是在使用过程中�
 <br/>
 <br/>
 
-###SDWebImage 解析
+### SDWebImage 解析
 
 解析主要围绕着SDWebImage的图片加载流程来分析，介绍SDWebImage这个框架加载图片过程中的一些处理方法和设计思路。
 
@@ -173,7 +180,7 @@ SDWebImage在加载图片网络请求的NSURLConnection的代理中对httpCode �
 
 ![](http://upload-images.jianshu.io/upload_images/656644-6a8e47b73f5f0137.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###总结
+### 总结
 
 SDWebImage作为一个优秀的图片加载框架，提供的使用方法和接口对开发者来说非常友好。其内部实现多是采用Block的方式来实现回调
 

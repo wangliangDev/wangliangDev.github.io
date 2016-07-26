@@ -1,8 +1,14 @@
 ---
 layout: post
 title: Markdown 新手指南
-category: 技术
-comments: true
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+
+blog: true
+
+author: ""
+description: ""
 ---
 
 Markdown 是一种「电子邮件」风格的「标记语言」，我们强烈推荐所有写作者学习和掌握该语言
