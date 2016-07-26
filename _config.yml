@@ -122,12 +122,10 @@ safe: false
 highlighter: pygments
 title: 汪亮的技术博客
 description: 笨鸟先飞
-theme: time-machine
-###disqusname: wangliangDev
-disqusname: disqus_3fldC3Flny
-disqus:
-  config: true
-  id: disqus_3fldC3Flny
+theme: slate
+disqusname: wangliangDev
+
+
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
 # those themes are all come from GitHub Pages Themes
