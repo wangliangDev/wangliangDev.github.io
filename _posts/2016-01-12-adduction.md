@@ -1,8 +1,16 @@
 ---
+title: "什么是循环引用"
 layout: post
-title: 什么是循环引用
-category: 技术
-comments: true
+date: 2016-02-24 22:44
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- markdown
+- elements
+blog: true
+
+author: 汪亮
+description: xx
 ---
 
 
