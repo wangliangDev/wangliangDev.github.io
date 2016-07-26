@@ -85,7 +85,7 @@ Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议�
 
 
 
-{% highlight objective-c %}
+{% highlight java %}
  -(void)test
 	{
     NSString * host =@"123.33.33.1";
