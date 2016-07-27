@@ -9,7 +9,7 @@ layout: page
 <h1 class="title">{{ page.title }}</h1>
 
 <span class="date">
-    <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%Y--%m --%d   %A" }}</time>
+    <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%Y--%m--%d   %A" }}</time>
     {% if site.read-time %} - {% include read-time.html %}{% endif %}
 </span>
 
@@ -45,6 +45,5 @@ layout: page
 {% endif %}
 
 {% if site.disqus %}
-   <!-- {% include disqus.html %}-->  
- 
+   {% include disqus.html %}
 {% endif %}
