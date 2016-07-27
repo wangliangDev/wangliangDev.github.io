@@ -98,7 +98,23 @@ gem过旧，使用以下命令更新一下，再进行安装(先切换到了ruby
 
 `sudo gem update`
 
-
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="abf041bc326de05d178da19139b86f46" data-title="2016安装cocoaPods"data-url="">
+</div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"wangliangdev"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
 
 
 
