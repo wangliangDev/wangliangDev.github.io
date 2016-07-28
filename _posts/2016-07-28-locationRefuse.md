@@ -17,4 +17,4 @@ description: ""
 
 在`plist`文件的这两个位置添加这些描就可以 `string`后面就是你要显示的描述
 
-![](http://a4.qpic.cn/psb?/V12Uftpz3aKZ7d/7l*lkHbQ4jFPf8HV3lzn8.UsY.zhA8VxrpAT3PkoxI8!/m/dI8BAAAAAAAAnull&bo=OgIuAAAAAAADBzQ!&rf=photolist&t=5)
+![](http://i2.piimg.com/4851/4c1f4d982e790a86.png)
