@@ -77,7 +77,7 @@ end
 编辑完Podfile后，使用Terminal(终端)输入其中一个命令(需要cd到项目的根目录，即Podfile所在目录):
 
 
-`pod install --no-repo-updateorpod install`
+`pod install --verbose --no-repo-update `
 
 第一个命令是不更新本地库信息进行安装，速度会快一点，毕竟不需要更新。但是会有一点点问题，当有一个新的库发布的时候，就会无法安装成功。如果不嫌麻烦，可以定时执行以下命令更新CocoaPods的库，然后就可以在一段时间使用以上的第一个命令进行安装:
 
