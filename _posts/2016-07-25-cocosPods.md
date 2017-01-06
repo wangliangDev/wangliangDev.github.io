@@ -29,7 +29,7 @@ Mac上面本来就自带了ruby，所有就不用自己安装了(除非你卸载
 打开Terminal(终端)，输入以下命令(第二个命令可能会需要稍等一会儿)
 
 ```
-gem sources --remove https://rubygems.org
+gem sources -- remove https://rubygems.org
 gem source -a https://gems.ruby-china.org
 
 ```
